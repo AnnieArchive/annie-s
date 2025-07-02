@@ -2,8 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-export default function Portfolio() {
-  return (
+export default function Portfolio() {return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-6">
 
       {/* Left Column */}
