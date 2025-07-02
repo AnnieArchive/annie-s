@@ -14,7 +14,7 @@ export default function Portfolio() {
             <p>Marketing Professional</p>
             <p className="mt-2">📞 +44 7587989042</p>
             <p>📧 annieramesh07@gmail.com</p>
-            <p>🌐 Portfolio | LinkedIn | Instagram</p>
+            <p>🌐 www.linkedin.com/in/ani-divyashree-ramesh</p>
           </CardContent>
         </Card>
 
