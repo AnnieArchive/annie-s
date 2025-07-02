@@ -1,6 +1,127 @@
-git init
-git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git push -u origin main
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function Portfolio() {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-6">
+
+      {/* Left Column */}
+      <div className="col-span-1 space-y-4">
+        <Card>
+          <CardContent className="p-4">
+            <h1 className="text-2xl font-bold mb-2">Ani Divyashree Ramesh</h1>
+            <p>Marketing Professional</p>
+            <p className="mt-2">📞 +44 7587989042</p>
+            <p>📧 annieramesh07@gmail.com</p>
+            <p>🌐 www.linkedin.com/in/ani-divyashree-ramesh</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Core Skills</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Brand Marketing</li>
+              <li>CRM & Customer Engagement</li>
+              <li>Strategic Planning</li>
+              <li>Digital Marketing (SEO, SEM, Social Media)</li>
+              <li>Data Analytics & Market Research</li>
+              <li>Event Management & PR</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Certifications</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Google Ads Certified</li>
+              <li>HubSpot Inbound Marketing Certified</li>
+              <li>CRM Fundamentals – Salesforce</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Awards</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Rajyapuraskar Award – 2018</li>
+              <li>Sports Assistant Secretary – 2019</li>
+              <li>NSS Distinction – 2019-2022</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Right Column */}
+      <div className="col-span-1 md:col-span-3 space-y-4">
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">About Me</h2>
+            <p>I am a dynamic marketing professional with experience in brand development, strategic marketing, and customer engagement. Currently pursuing an MSc in International Marketing at the University of Surrey, I am passionate about building impactful, data-driven campaigns that tell compelling brand stories.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Work Experience</h2>
+
+            <div className="mb-4">
+              <h3 className="font-semibold">ITC Hotels, Chennai | Marketing Executive</h3>
+              <p className="text-sm mb-1">October 2022 – July 2023</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Increased event attendance by 30% through targeted campaigns.</li>
+                <li>Executed PR strategies that enhanced brand visibility.</li>
+                <li>Collaborated with cross-functional teams for seamless event delivery.</li>
+                <li>Refined marketing strategies using post-event data analysis.</li>
+              </ul>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="font-semibold">Relationship Science (I) Pvt Ltd, Chennai | Sales & Marketing Executive</h3>
+              <p className="text-sm mb-1">April 2020 – October 2022</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Drove a 20% increase in quarterly revenue through targeted sales initiatives.</li>
+                <li>Improved customer retention through effective CRM strategies.</li>
+                <li>Identified trends and informed marketing decisions through market analysis.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold">The Indian Express, Chennai | Marketing Intern</h3>
+              <p className="text-sm mb-1">May 2019 – August 2019</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Achieved a 15% increase in online engagement through digital strategies.</li>
+                <li>Supported B2B initiatives and enhanced lead generation by 10%.</li>
+              </ul>
+            </div>
+
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Education</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>University of Surrey, UK – MSc International Marketing | 2023 – 2024</li>
+              <li>Women’s Christian College, India – B.A. Corporate Economics | 2020 – 2022</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Blogs</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Marketing Insights: Case studies and campaign reviews</li>
+              <li>CRM Mastery: Customer retention best practices</li>
+              <li>Social Media Playbook: Creative content strategies</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
